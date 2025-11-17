@@ -183,6 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
             apellido: document.getElementById('apellido').value,
             menu: document.getElementById('menu').value,
             asistencia: document.querySelector('input[name="asistencia"]:checked').value,
+            notas: document.getElementById('notas').value,
             referer: window.location.origin
         };
 

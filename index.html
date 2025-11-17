@@ -200,17 +200,17 @@
             <form class="rsvp-form">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">Nombre *</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="apellido">Apellido</label>
+                        <label for="apellido">Apellido *</label>
                         <input type="text" id="apellido" name="apellido" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="menu">Menú</label>
+                    <label for="menu">Menú *</label>
                     <select id="menu" name="menu" required>
                         <option value="">Selecciona una opción</option>
                         <option value="tradicional">Tradicional</option>
@@ -221,21 +221,26 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Asistencia</label>
+                    <label>Asistencia *</label>
                     <div class="radio-group">
                         <label class="radio-label">
-                            <input type="radio" name="asistencia" value="pendiente" checked>
+                            <input type="radio" name="asistencia" value="pendiente" checked required>
                             <span>Pendiente</span>
                         </label>
                         <label class="radio-label">
-                            <input type="radio" name="asistencia" value="acepto">
+                            <input type="radio" name="asistencia" value="acepto" required>
                             <span>Acepto</span>
                         </label>
                         <label class="radio-label">
-                            <input type="radio" name="asistencia" value="no-acepto">
+                            <input type="radio" name="asistencia" value="no-acepto" required>
                             <span>No Acepto</span>
                         </label>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notas">Notas (opcional)</label>
+                    <textarea id="notas" name="notas" rows="4" placeholder="¿Alguna restricción alimentaria adicional, movilidad reducida, o algo que debamos saber?"></textarea>
                 </div>
 
                 <button type="submit" class="btn-submit">Enviar Confirmación</button>
