@@ -1,5 +1,5 @@
 // Configuration
-const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE'; // Replace with your Apps Script Web App URL
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz8EVaWNaDQe2d7HVOKlu_LYwUWvC94gnPbgrMgbKQo0mev8rMLAit-8zTYZmuHc8GY2g/exec';
 
 // Password Modal & Background Music Control
 const passwordModal = document.getElementById('password-modal');
