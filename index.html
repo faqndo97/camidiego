@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiegoyCamila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tektur:wght@400..900&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="music/wedding-song.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Music Control Button -->
+    <button id="music-toggle" class="music-toggle" aria-label="Reproducir música">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="music-icon">
+            <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
+            <path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
+        </svg>
+    </button>
+
+    <!-- Password Modal -->
+    <div id="password-modal" class="password-modal">
+        <div class="password-modal-content">
+            <img src="images/c174a1ada29855e3172966f4e660bf0f.png" alt="Decorative leaves" class="modal-decoration">
+            <h2 class="modal-title">Diego & Camila</h2>
+            <p class="modal-subtitle">Bienvenidos a nuestra boda</p>
+            <form id="password-form" class="password-form">
+                <div class="password-input-group">
+                    <label for="password-input">Contraseña</label>
+                    <input type="password" id="password-input" placeholder="Ingresa la contraseña" required>
+                </div>
+                <p id="password-error" class="password-error hidden">Contraseña incorrecta. Intenta nuevamente.</p>
+                <button type="submit" class="btn-password">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-col-1"></div>
+            <div class="hero-col-2">
+                <img src="images/c174a1ada29855e3172966f4e660bf0f.png" alt="Decorative leaves" class="hero-decoration">
+                <p class="date">14.02.2026</p>
+                <div class="names">
+                    <p class="name">Diego</p>
+                    <p class="ampersand">&</p>
+                    <p class="name">Camila</p>
+                </div>
+                <p class="tagline">¡Nos Casamos!</p>
+                <div class="divider">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+                        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="hero-col-3">
+                <img src="images/81134263cff62f77d86a3d4fcb99f9e6.jpg" alt="Diego y Camila" class="couple-photo">
+            </div>
+            <div class="hero-col-4"></div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <p class="section-title">Celebremos juntos nuestra historia</p>
+            <div class="divider-light">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="heart-icon-light">
+                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+            </div>
+            <p class="countdown-label">Faltan</p>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">89</span>
+                    <span class="countdown-label-small">DÍAS</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">23</span>
+                    <span class="countdown-label-small">HORAS</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">34</span>
+                    <span class="countdown-label-small">MINUTOS</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">19</span>
+                    <span class="countdown-label-small">SEGUNDOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <div class="container">
+            <h2 class="event-section-title">14 de Febrero</h2>
+            <div class="event-grid">
+                <!-- Ceremony -->
+                <div class="event-card">
+                    <img src="images/church.png" alt="Church icon" class="event-icon">
+                    <p class="time">18:30 hs.</p>
+                    <p class="venue-name">Iglesia Virgen del Carmen y Santa Teresita</p>
+                    <p class="venue-subtitle">Parroquia de las Carmelitas</p>
+                    <a href="https://maps.app.goo.gl/mmeD5C5zRNtL8XRQ7" class="btn-map" target="_blank">
+                        LLEGAR A LA CEREMONIA
+                    </a>
+                </div>
+
+                <!-- Reception -->
+                <div class="event-card">
+                    <img src="images/glasses.svg" alt="Glasses icon" class="event-icon">
+                    <p class="time">20:00 hs.</p>
+                    <p class="venue-name">Chacra Joaquina</p>
+                    <p class="venue-address">Cno. de la Redención 7005</p>
+                    <a href="https://maps.app.goo.gl/naBjjU1XyzRuYutY9" class="btn-map" target="_blank">
+                        LLEGAR A LA FIESTA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section class="dress-code">
+        <div class="container">
+            <img src="images/suite.png" alt="Suite icon" class="dress-code-icon">
+            <h2>Dress Code</h2>
+            <div class="divider-light"></div>
+            <p class="dress-code-type">Vestimenta formal</p>
+            <p class="dress-code-note">Se reserva el blanco</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <div class="container">
+            <img src="images/camera.png" alt="Camera icon" class="gallery-icon-header">
+            <h2>¡Hagámos una fiesta épica!</h2>
+            <p>Comparte tus fotos y/o videos de este día especial.</p>
+            <div class="gallery-buttons">
+                <a href="https://bodadc142-cloud.github.io/Boda2026/" class="gallery-btn" target="_blank">
+                    ÁLBUM DE FOTOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank Details Section -->
+    <section class="bank-details">
+        <div class="container">
+            <img src="images/gift.svg" alt="Gift icon" class="gift-icon">
+            <h2>Regalos</h2>
+            <div class="divider-light">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="heart-icon-light">
+                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+            </div>
+            <p class="gift-text">Tu presencia es el mejor regalo, pero si deseas hacernos un obsequio.</p>
+            <div class="bank-info">
+                <h3>SANTANDER</h3>
+                <p class="bank-detail">
+                    <strong>CC:</strong> <span id="cc-number">658200</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="copy-icon" onclick="copyToClipboard('cc-number')">
+                        <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+                        <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625v-12.75C3 6.839 3.84 6 4.875 6Z" />
+                    </svg>
+                </p>
+                <p class="bank-detail"><strong>SUCURSAL:</strong> 81</p>
+                <p class="bank-detail section-title-small">DESDE OTROS BANCOS</p>
+                <p class="bank-detail account-number">
+                    <span id="account-number">008100000658200</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="copy-icon" onclick="copyToClipboard('account-number')">
+                        <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+                        <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625v-12.75C3 6.839 3.84 6 4.875 6Z" />
+                    </svg>
+                </p>
+                <p class="bank-detail section-title-small">TITULAR</p>
+                <p class="bank-detail">Diego Andrés Lucas Diaz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp">
+        <div class="container">
+            <h2 class="rsvp-title">Confirmar Asistencia</h2>
+            <p class="rsvp-subtitle">Esperamos que seas parte de esta gran celebración. Por favor, confirma asistencia antes del 14 de Enero de 2025</p>
+
+            <form class="rsvp-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="menu">Menú</label>
+                    <select id="menu" name="menu" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="tradicional">Tradicional</option>
+                        <option value="vegetariano">Vegetariano</option>
+                        <option value="vegano">Vegano</option>
+                        <option value="celiaco">Celíaco</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Asistencia</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="pendiente" checked>
+                            <span>Pendiente</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="acepto">
+                            <span>Acepto</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="no-acepto">
+                            <span>No Acepto</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Confirmación</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Song Request Section -->
+    <section class="song-request">
+        <div class="container">
+            <h2 class="song-request-title">Música para la Fiesta</h2>
+            <p class="song-request-subtitle">Ayúdanos a crear la playlist perfecta para nuestra celebración. Elige una de las dos opciones:</p>
+
+            <div class="song-request-options">
+                <div class="option-card">
+                    <div class="option-number">Opción 1</div>
+                    <h3>Playlist Colaborativa de Spotify</h3>
+                    <p>Si tienes cuenta de Spotify, únete a nuestra playlist colaborativa y agrega tus canciones favoritas directamente.</p>
+                    <a href="https://open.spotify.com/playlist/YOUR_PLAYLIST_ID" class="btn-spotify" target="_blank">
+                        AGREGAR EN SPOTIFY
+                    </a>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-number">Opción 2</div>
+                    <h3>Formulario de Sugerencias</h3>
+                    <p>Si no tienes Spotify, completa este formulario y nosotros agregaremos tu canción a la playlist.</p>
+                    <button class="btn-form-toggle" onclick="toggleSongForm()">
+                        SUGERIR CANCIÓN
+                    </button>
+                </div>
+            </div>
+
+            <div id="song-form-container" class="song-form-container hidden">
+                <div id="song-success-message" class="song-success-message hidden">
+                    ¡Canción agregada exitosamente! Puedes agregar más canciones si lo deseas.
+                </div>
+                <form class="song-form" id="song-form">
+                    <div class="form-group">
+                        <label for="song-name">Nombre de la Canción *</label>
+                        <input type="text" id="song-name" name="song-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="artist-name">Artista *</label>
+                        <input type="text" id="artist-name" name="artist-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-name">Tu Nombre (opcional)</label>
+                        <input type="text" id="guest-name" name="guest-name">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Sugerencia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating RSVP Button -->
+    <button id="floating-rsvp-btn" class="floating-btn">Confirmar Asistencia</button>
+
+    <script src="js/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,1109 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f5f5f0;
+    position: relative;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 500px 400px 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-col-1,
+.hero-col-4 {
+    display: block;
+}
+
+.hero-col-2 {
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.hero-col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.hero-decoration {
+    margin-bottom: 100px;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transform: rotate(180deg);
+    width: 300px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #7a9174;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.names {
+    margin: 40px 0;
+}
+
+.name {
+    font-family: 'WindSong', cursive;
+    font-size: 4rem;
+    color: #5a7252;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.ampersand {
+    font-family: 'WindSong', cursive;
+    font-size: 3rem;
+    color: #5a7252;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.tagline {
+    font-size: 1.8rem;
+    color: #7a9174;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #7a9174, transparent);
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-icon {
+    width: 48px;
+    height: 48px;
+    color: #7a9174;
+    background: #f5f5f0;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.couple-photo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Countdown Section */
+.countdown-section {
+    background-color: #7a9174;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.divider-light {
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-icon-light {
+    width: 48px;
+    height: 48px;
+    color: white;
+    background: #7a9174;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.countdown-label {
+    font-family: 'WindSong', cursive;
+    font-size: 3rem;
+    margin: 40px 0 20px;
+    font-weight: 500;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    font-size: 2.5rem;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-number {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.countdown-label-small {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.countdown-separator {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 0 5px;
+}
+
+/* Event Details Section */
+.event-details {
+    background-color: #f5f5f0;
+    padding: 80px 20px;
+}
+
+.event-section-title {
+    font-family: 'WindSong', cursive;
+    font-size: 3.5rem;
+    color: #5a7252;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-card {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.event-card h3 {
+    font-size: 1.3rem;
+    color: #5a7252;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.pre-title {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.venue-name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.venue-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.venue-address {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+.btn-map {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5a7252;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid #5a7252;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.btn-map:hover {
+    background-color: #4a6142;
+    border-color: #4a6142;
+}
+
+.btn-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* Dress Code Section */
+.dress-code {
+    background-color: #7a9174;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.dress-code-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.dress-code h2 {
+    font-family: 'WindSong', cursive;
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.dress-code-type {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.dress-code-note {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+/* Photo Gallery Section */
+.photo-gallery {
+    background-color: #f5f5f0;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.gallery-icon-header {
+    width: 160px;
+    height: 120px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.photo-gallery h2 {
+    font-family: 'WindSong', cursive;
+    font-size: 3rem;
+    color: #5a7252;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.photo-gallery p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.gallery-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5a7252;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid #5a7252;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-btn:hover {
+    background-color: #4a6142;
+    border-color: #4a6142;
+}
+
+.gallery-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* Song Request Section */
+.song-request {
+    background-color: #7a9174;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.song-request-title {
+    font-family: 'WindSong', cursive;
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.song-request-subtitle {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.song-request-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    align-items: stretch;
+}
+
+.option-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.option-number {
+    background-color: white;
+    color: #5a7252;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 auto 20px;
+    letter-spacing: 1px;
+}
+
+.option-card h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.option-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-spotify,
+.btn-form-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #5a7252;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-spotify:hover,
+.btn-form-toggle:hover {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.song-form-container {
+    max-width: 600px;
+    margin: 40px auto 0;
+    transition: all 0.3s ease;
+}
+
+.song-form-container.hidden {
+    display: none;
+}
+
+.song-success-message {
+    background-color: #8cb369;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-shadow: 0 2px 10px rgba(140, 179, 105, 0.3);
+    transition: all 0.3s ease;
+}
+
+.song-success-message.hidden {
+    display: none;
+}
+
+.song-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.song-form .form-group {
+    margin-bottom: 20px;
+}
+
+.song-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5a7252;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.song-form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    transition: border-color 0.3s ease;
+}
+
+.song-form input[type="text"]:focus {
+    outline: none;
+    border-color: #5a7252;
+}
+
+.song-form .btn-submit {
+    width: 100%;
+}
+
+/* Bank Details Section */
+.bank-details {
+    background-color: #7a9174;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.gift-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+}
+
+.bank-details h2 {
+    font-family: 'WindSong', cursive;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.gift-text {
+    color: white;
+    font-size: 1.1rem;
+    margin: 30px 0;
+}
+
+.bank-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bank-info h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.bank-detail {
+    color: white;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.bank-detail strong {
+    font-weight: 600;
+}
+
+.section-title-small {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+
+.account-number {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.copy-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.copy-icon:hover {
+    opacity: 1;
+}
+
+/* RSVP Section */
+.rsvp {
+    background-color: #f5f5f0;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.rsvp-title {
+    font-family: 'WindSong', cursive;
+    font-size: 3.5rem;
+    color: #5a7252;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.rsvp-subtitle {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rsvp-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5a7252;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #5a7252;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.radio-label:hover {
+    border-color: #5a7252;
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"]:checked + span {
+    color: #5a7252;
+    font-weight: 600;
+}
+
+.btn-submit {
+    background-color: #5a7252;
+    color: white;
+    padding: 15px 40px;
+    border: 2px solid #5a7252;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-submit:hover {
+    background-color: #4a6142;
+    border-color: #4a6142;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(90, 114, 82, 0.3);
+}
+
+/* Password Modal */
+.password-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.password-modal.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.password-modal-content {
+    background-color: #f5f5f0;
+    padding: 60px 50px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: modalSlideIn 0.5s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-decoration {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.modal-title {
+    font-family: 'WindSong', cursive;
+    font-size: 3.5rem;
+    color: #5a7252;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.modal-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.password-input-group {
+    text-align: left;
+}
+
+.password-input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5a7252;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.password-input-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    transition: border-color 0.3s ease;
+    text-align: center;
+}
+
+.password-input-group input:focus {
+    outline: none;
+    border-color: #5a7252;
+}
+
+.password-error {
+    color: #d64545;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: -10px 0 0 0;
+}
+
+.password-error.hidden {
+    display: none;
+}
+
+.btn-password {
+    background-color: #5a7252;
+    color: white;
+    padding: 15px 40px;
+    border: 2px solid #5a7252;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-password:hover {
+    background-color: #4a6142;
+    border-color: #4a6142;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(90, 114, 82, 0.3);
+}
+
+/* Music Control Button */
+.music-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #5a7252;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(90, 114, 82, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.music-toggle:hover {
+    background-color: #4a6142;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(90, 114, 82, 0.5);
+}
+
+.music-toggle.playing {
+    background-color: #8cb369;
+}
+
+.music-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Floating RSVP Button */
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #8cb369 0%, #6b9b5a 100%);
+    color: white;
+    padding: 18px 40px;
+    border: 2px solid #8cb369;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 8px 20px rgba(140, 179, 105, 0.5);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-btn:hover {
+    background: linear-gradient(135deg, #9bc47a 0%, #7aab6b 100%);
+    border-color: #9bc47a;
+    transform: translateX(-50%) translateY(-3px);
+    box-shadow: 0 12px 30px rgba(140, 179, 105, 0.6);
+}
+
+.floating-btn.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero-col-1,
+    .hero-col-4 {
+        display: none;
+    }
+
+    .hero-col-2 {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    .hero-col-3 {
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+
+    .hero-decoration {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 5rem;
+    }
+
+    .ampersand {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .countdown {
+        font-size: 1.5rem;
+    }
+
+    .countdown-number {
+        font-size: 2rem;
+    }
+
+    .countdown-label-small {
+        font-size: 0.7rem;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .song-form {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .rsvp-form {
+        padding: 30px 20px;
+    }
+
+    .password-modal-content {
+        padding: 40px 30px;
+    }
+
+    .modal-title {
+        font-size: 2.5rem;
+    }
+
+    .modal-decoration {
+        width: 120px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .song-request-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+    }
+
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+
+    .countdown-separator {
+        display: none;
+    }
+}

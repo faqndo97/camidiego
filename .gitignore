@@ -1,0 +1,14 @@
+# Apps Script code (deploy manually to Google Apps Script)
+appscript/
+
+# MCP
+.playwright-mcp/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
